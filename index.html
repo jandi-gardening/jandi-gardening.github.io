@@ -12,7 +12,7 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" id="logo" href="#">
-      <img src="images/jandi_leaf.png" class="d-inline-block align-top jandi-icon" width="40px" alt="JANDI"/>
+      <img src="images/jandi_leaf.png" class="d-inline-block align-top jandi-icon" width="30px" alt="JANDI"/>
       <span>잔디콘 2019</span>
     </a>
 
@@ -20,7 +20,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+    <div class="navbar-collapse collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="#header">HOME</a>
@@ -30,6 +30,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#schedule">SCHEDULE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#location">LOCATION</a>
         </li>
       </ul>
       <form class="form-inline mt-2 mt-md-0">
@@ -41,86 +44,89 @@
     <div id="contents">
       <div id="header" class="content">
         <h1>JANDI CONFERENCE 2019</h1>
-        <h2>1 June 2019 | Google campus Seoul </h2>
+        <h2>1 Jun 2019<span> | </span><a>Google campus Seoul</a></h2>
         <button class="register link-register-form">REGISTER NOW!</button>
       </div>
 
       <div id="time-nav" class="content">
         <div class="row justify-content-center">
-          <div class="time-unit col-sm-1">
-            <h1 class="time-label">30</h1>
+          <div class="time-unit col-md-1">
+            <h1 id="left-day" class="time-label">30</h1>
             <span>Days</span>
           </div>
-          <span class="col-sm-1">:</span>
-          <div class="time-unit col-sm-1">
-            <h1 class="time-label">05</h1>
+
+          <span class="time-divider col-md-1">:</span>
+
+          <div class="time-unit col-md-1">
+            <h1 id="left-hour" class="time-label">05</h1>
             <span>Hours</span>
           </div>
-          <span class="col-sm-1">:</span>
-          <div class="time-unit col-sm-1">
-            <h1 class="time-label">30</h1>
+
+          <span class="time-divider col-md-1">:</span>
+
+          <div class="time-unit col-md-1">
+            <h1 id="left-min" class="time-label">30</h1>
             <span>Minutes</span>
           </div>
-          <span class="col-sm-1">:</span>
-          <div class="time-unit col-sm-1">
-            <h1 class="time-label">30</h1>
-            <span>Second</span>
+          <span class="time-divider col-md-1">:</span>
+
+          <div class="time-unit col-md-1">
+            <h1 id="left-sec" class="time-label">30</h1>
+            <span>Seconds</span>
           </div>
         </div>
       </div>
 
       <div id="description" class="content">
         <h2>
-          <img class="jandi-icon" src="images/jandi_leaf.png" alt="seeds" width="80px" height="80px"/>잔디콘은요!
+          <img class="jandi-icon" src="images/jandi_leaf.png" alt="seeds" width="50px" height="50px"/><br/>
+          잔디콘은요!
         </h2>
         <p>
           잔디콘은 잔디를 심는 정원사들이 모여 지식을 공유하기 위한 자리 입니다.<br/>
           <br/>
           내가 오늘 배운 것(TIL)을 깃헙에 정리하고 커밋하는 것을 장려하기 위한 100일 간의 커뮤니티에서 출발했습니다.
-          시즌1에는 19명, 시즌2에는 22명, 시즌3에는 28명이 함께 하고 있습니다. 시즌1과 2에는 카카오 크루만을 대상으로 했지만,
-          시즌3에는 크루 뿐만 아니라 크루의 지인들과도 함께하고 있습니다.
+          시즌1에는 19명, 시즌2에는 22명, 시즌3에는 28명이 함께 하고 있습니다.
           <br/>
           28명이 100일 간 알게된 지식은 방대합니다.
-          개발자도 있고, 개발자가 아닌 정원사들도 있습니다. 다양한 지식이 쌓이고 있습니다.
+          개발자, 기획자, 분석가 등 다양한 분야의 정원사들이 있어 넓은 지식이 쌓이고 있습니다.
           이 지식과 경험을 다른 정원사들과 지인들에게 공유하고자 잔디콘이 기획되었습니다!
         </p>
       </div>
 
       <div id="speakers" class="content">
-        <h2 class="text-white m-30">Event Speakers</h2>
-        <p class="text-white m-30">잔디콘을 빛내줄 스피커들을 소개합니다.</p>
+        <h2 class="text-white m-30">Speakers</h2>
         <div class="row">
-          <div class="speaker col-sm-12 col-md-6 col-lg-4">
-            <img class="speaker-profile" src="images/jandi_leaf.png" width="200px"/>
+          <!-- <div class="speaker col-xs-6 col-md-6 col-lg-4">
+            <img class="speaker-profile img-responsive" src="images/miika.jpg" />
+            <span class="speaker-name">Miika</span>
+          </div> -->
+          <div class="speaker col-xs-6 col-md-6 col-lg-4">
+            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
             <span class="speaker-name">Aria</span>
           </div>
-          <div class="speaker col-sm-12 col-md-6 col-lg-4">
-            <img class="speaker-profile" src="images/jandi_leaf.png" width="200px"/>
+          <div class="speaker col-xs-6 col-md-6 col-lg-4">
+            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
             <span class="speaker-name">Aria</span>
           </div>
-          <div class="speaker col-sm-12 col-md-6 col-lg-4">
-            <img class="speaker-profile" src="images/jandi_leaf.png" width="200px"/>
+          <div class="speaker col-xs-6 col-md-6 col-lg-4">
+            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
             <span class="speaker-name">Aria</span>
           </div>
-          <div class="speaker col-sm-12 col-md-6 col-lg-4">
-            <img class="speaker-profile" src="images/jandi_leaf.png" width="200px"/>
+          <div class="speaker col-xs-6 col-md-6 col-lg-4">
+            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
             <span class="speaker-name">Aria</span>
           </div>
-          <div class="speaker col-sm-12 col-md-6 col-lg-4">
-            <img class="speaker-profile" src="images/jandi_leaf.png" width="200px"/>
+          <div class="speaker col-xs-6 col-md-6 col-lg-4">
+            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
             <span class="speaker-name">Aria</span>
           </div>
-          <div class="speaker col-sm-12 col-md-6 col-lg-4">
-            <img class="speaker-profile" src="images/jandi_leaf.png" width="200px"/>
+          <div class="speaker col-xs-6 col-md-6 col-lg-4">
+            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
             <span class="speaker-name">Aria</span>
           </div>
-
-          <div class="speaker col-sm-12 col-md-6 col-lg-4">
-            <img class="speaker-profile" src="images/jandi_leaf.png" width="200px"/>
-            <span class="speaker-name">Aria</span>
-          </div>
-          <div class="speaker col-sm-12 col-md-6 col-lg-4">
-            <img class="speaker-profile" src="images/jandi_leaf.png" width="200px"/>
+          <div class="speaker col-xs-6 col-md-6 col-lg-4">
+            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
             <span class="speaker-name">Aria</span>
           </div>
         </div>
@@ -128,36 +134,36 @@
 
       <div id="schedule" class="content">
         <h2>Conference Schedule</h2>
-        <p class="text-center">잔디콘은 6/1 토요일 오전 9시 30분 부터 오후 6시까지 진행됩니다!</p>
-        <div class="mx-auto col-sm-11 col-md-10 col-lg-9 table-responsive">
+        <p class="text-center">잔디콘은 6월 1일 토요일 오전 9시 30분 부터 오후 6시까지 진행됩니다!</p>
+        <div class="mx-auto col-xs-12 col-md-10 col-lg-9 table-responsive pl-0 pr-0">
           <table class="table table-striped">
             <tr>
-              <th class="bg-info">9:30~10:00</th>
+              <th class="bg-gr">9:30~10:00</th>
               <td>등록</td>
               <td class="speaker">Aria</td>
             </tr>
             <tr>
-              <th class="bg-primary">9:30~10:00</th>
+              <th class="bg-pk">10:00~10:20</th>
+              <td>Keynote</td>
+              <td class="speaker">Aria</td>
+            </tr>
+            <tr>
+              <th class="bg-dg">10:30~11:00</th>
+              <td>Causal Inference</td>
+              <td class="speaker">Miika <img class="speaker-sm img-responsive" src="images/miika.jpg" width="30px"/></td>
+            </tr>
+            <tr>
+              <th class="bg-lg">9:30~10:00</th>
               <td>등록</td>
               <td class="speaker">Aria</td>
             </tr>
             <tr>
-              <th class="bg-warning">9:30~10:00</th>
+              <th class="bg-gr">9:30~10:00</th>
               <td>등록</td>
               <td class="speaker">Aria</td>
             </tr>
             <tr>
-              <th class="bg-success">9:30~10:00</th>
-              <td>등록</td>
-              <td class="speaker">Aria</td>
-            </tr>
-            <tr>
-              <th class="bg-info">9:30~10:00</th>
-              <td>등록</td>
-              <td class="speaker">Aria</td>
-            </tr>
-            <tr>
-              <th class="bg-primary">9:30~10:00</th>
+              <th class="bg-pk">9:30~10:00</th>
               <td>등록</td>
               <td class="speaker">Aria</td>
             </tr>
@@ -183,7 +189,7 @@
                     <li class="font-weight-bold">스티커</li>
                     <li class="font-weight-bold">간단한 점심 도시락</li>
                 </ul>
-                <button class="link-register-form btn btn-success my-2 my-sm-0">BUY TICKET!</button>
+                <button class="link-register-form btn btn-success my-2 my-sm-0"><img src="images/jandi_seeds.png" width="35px" style="margin-left:-10px;" />&nbsp;BUY TICKET!</button>
               </div>
             </div>
           </div>
@@ -191,7 +197,16 @@
       </div>
     </div>
 
-    <div id="map"></div>
+    <div id="location">
+      <h2>Location</h2>
+      <p class="text-center"><b>구글캠퍼스</b><br/>서울 강남구 영동대로 417 오토웨이타워 지하 2층</p>
+      <div id="map"></div>
+    </div>
+    <footer>
+      <div class="text-center text-white">
+        Copyright to Aria.j
+      </div>
+    </footer>
   </main>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -205,6 +220,33 @@
     })
     $('body').scrollspy({ target: '#navbarCollapse' });
 
+    /* timer */
+    var countDownDate = new Date("2019-06-01 09:30").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      if (distance < 0) {
+        clearInterval(x);
+        days = 0, hours = 0, minutes = 0, seconds = 0;
+      }
+
+      function addzero(num) {
+        return num < 10 ? '0' + num : num;
+      }
+
+      document.getElementById("left-day").innerHTML = addzero(days);
+      document.getElementById("left-hour").innerHTML = addzero(hours);
+      document.getElementById("left-min").innerHTML = addzero(minutes);
+      document.getElementById("left-sec").innerHTML = addzero(seconds);
+    }, 1000);
+
+    /* map */
     var container = document.getElementById('map');
 		var options = {
 			center: new daum.maps.LatLng(37.506174, 127.063834),

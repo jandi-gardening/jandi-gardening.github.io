@@ -7,18 +7,33 @@ h2{
   margin: 30px auto;
   text-align: center;
 }
+.bg-gr {
+  background-color: #407E3C;
+}
+.bg-dg {
+  background-color: #95282B;
+}
+.bg-lg {
+  background-color: #257A21;
+}
+.bg-pk {
+  background-color: #9A4A4C;
+}
+.bg-br {
+  background-color: #772054;
+}
 #logo>span {
-    margin-top: 5px;
     display: inline-block;
 }
-.jandi-icon {
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  -ms-transition: -ms-transform .8s ease-in-out;
-  transition: transform .8s ease-in-out;
+#description .jandi-icon {
+  margin-bottom: 8px;
 }
-.jandi-icon:hover {
-  -webkit-transform: rotateY(359deg);
-  transform: rotateY(179deg);
+.jandi-icon {
+  -webkit-animation: spin 5s infinite linear;
+}
+@-webkit-keyframes spin {
+  0%  {-webkit-transform: rotateY(0deg);}
+  100% {-webkit-transform: rotateY(360deg);}
 }
 .nav-item {
   display: block;
@@ -26,7 +41,7 @@ h2{
 }
 
 #contents {
-  margin-top: -10px;
+  margin-top: -20px;
 }
 
 #header {
@@ -36,10 +51,10 @@ h2{
   margin: 0;
   padding: 50px 30px 50px 30px;
 
-  background-image: url('https://www.radiustheme.com/demo/html/eventalk/img/figure/figure2.png');
+  background-image: linear-gradient(rgba(0, 37, 0, 0.9),rgba(0, 37, 0, 0.7)), url('images/cover.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 37, 0, 0.9) !important;
+  background-attachment: fixed;
 }
 
 #header h1 {
@@ -51,14 +66,15 @@ h2{
 #header h2 {
   margin-top: 30px;
   font-weight: 100;
+  font-size: 1.5em;
 }
 #header .register {
   padding: 15px 20px;
   border-radius: 10px;
+  border: 1px solid white;
   background-color: transparent;
   color: white;
   display: block;
-  /* font-size: 1.5em; */
   margin: 10px auto;
   margin-top: 60px;
   font-weight: bold;
@@ -84,7 +100,36 @@ h2{
   font-weight: 100;
   font-size: 1.2em;
 }
+.time-divider {
+  font-size: 3em;
+  font-weight: 900;
+  color: darkslategray;
+  display: block;
+  text-align: center;
+  margin: 0px 20px;
+}
+@media only screen and (max-width: 768px) {
+  .time-unit {
+    width: 25%;
+    min-width: 70px;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  .time-divider {
+    display: none;
+  }
+  .time-label {
+    margin-bottom: 0px;
+  }
 
+  #header>h2>a {
+    display: block;
+    margin-top: 10px;
+  }
+  #header>h2>span {
+    display: none;
+  }
+}
 .content {
   padding: 30px;
   padding-bottom: 70px;
@@ -94,66 +139,60 @@ h2{
   background-color: white;
 }
 #description p {
-  line-height: 200%;
-  font-size: 1.2em;
+  line-height: 170%;
+  font-size: 1em;
 }
 #speakers {
-  background-image: url('https://www.radiustheme.com/demo/html/eventalk/img/figure/figure2.png');
+  background-image: linear-gradient(rgba(0, 37, 0, 0.9),rgba(0, 37, 0, 0.7)), url('images/people.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 37, 0, 0.8) !important;
+  background-position: center;
+  background-attachment: fixed;
 }
-#speakers::after {
-    background-image: url("https://www.radiustheme.com/demo/html/eventalk/img/figure/figure-icon3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    top: 53%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: 2;
-}
-
 #speakers .speaker {
   padding: 20px;
 }
 .speaker .speaker-profile {
   border-radius: 50% !important;
   display: block;
-  background-color: white;
+  background-color: #90B24C;
+  padding: 2px;
   margin: 10px auto;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
+@media (min-width: 300px) {
+  .speaker {
+    width: 50%;
+  }
+}
+
 .speaker .speaker-name {
   display: block;
   text-align: center;
   font-weight: 500;
-  /* font-size: 1.5em; */
+  font-size: 1.5em;
+  margin-top: 20px;
   color: white;
 }
 #schedule table {
   overflow-x: scroll;
 }
 #schedule table tr>th {
-  width: 120px;
+  max-width: 120px;
+  width: 20%;
   text-align: center;
   color: white;
 }
 #schedule table th,td {
-  vertical-align: middle;
+  vertical-align: middle !important;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
 }
 #schedule table td:first-of-type {
   font-weight: bold;
+  min-width: 150px;
   padding-left: 20px !important;
 }
 #schedule table td:last-of-type {
@@ -161,6 +200,11 @@ h2{
 }
 #schedule .speaker {
   text-align: right;
+}
+#schedule .speaker-sm {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #90B24C;
 }
 #ticket-price {
   background-color: #f8f8f8;
