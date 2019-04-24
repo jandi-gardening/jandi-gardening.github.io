@@ -138,12 +138,12 @@
         <div class="mx-auto col-xs-12 col-md-10 col-lg-9 table-responsive pl-0 pr-0">
           <table class="table table-striped">
             <tr>
-              <th class="bg-gr">9:30~10:00</th>
+              <th class="bg-pk">9:30~10:00</th>
               <td>등록</td>
               <td class="speaker">Aria</td>
             </tr>
             <tr>
-              <th class="bg-pk">10:00~10:20</th>
+              <th class="bg-gr">10:00~10:20</th>
               <td>Keynote</td>
               <td class="speaker">Aria</td>
             </tr>
@@ -158,12 +158,12 @@
               <td class="speaker">Aria</td>
             </tr>
             <tr>
-              <th class="bg-gr">9:30~10:00</th>
+              <th class="bg-pk">9:30~10:00</th>
               <td>등록</td>
               <td class="speaker">Aria</td>
             </tr>
             <tr>
-              <th class="bg-pk">9:30~10:00</th>
+              <th class="bg-gr">9:30~10:00</th>
               <td>등록</td>
               <td class="speaker">Aria</td>
             </tr>
@@ -221,7 +221,7 @@
     $('body').scrollspy({ target: '#navbarCollapse' });
 
     /* timer */
-    var countDownDate = new Date("2019-06-01 09:30").getTime();
+    var countDownDate = new Date("2019-06-01T09:30:00").getTime();
     var x = setInterval(function() {
       var now = new Date().getTime();
       var distance = countDownDate - now;
@@ -248,18 +248,15 @@
 
     /* map */
     var container = document.getElementById('map');
-		var options = {
-			center: new daum.maps.LatLng(37.506174, 127.063834),
-			level: 3,
-      marker: [
-        {
-          position: new daum.maps.LatLng(37.506174, 127.063834),
-          text: "구글캠퍼스"
-        }
-      ]
-		};
-
-		var map = new daum.maps.StaticMap(container, options);
+    var options = {
+		center: new daum.maps.LatLng(37.506174, 127.063834),
+		level: 3,
+	    marker: [{
+		    position: new daum.maps.LatLng(37.506174, 127.063834),
+		    text: "잔디콘 @구글캠퍼스"
+	    }]
+    };
+    var map = new daum.maps.StaticMap(container, options);
   })
   </script>
 </body>
