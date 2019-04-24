@@ -8,19 +8,19 @@ h2{
   text-align: center;
 }
 .bg-gr {
-  background-color: #407E3C;
+  background-color: #348A43;
 }
 .bg-dg {
-  background-color: #95282B;
+  background-color: #5E6205;
 }
 .bg-lg {
-  background-color: #257A21;
+  background-color: #AFB443;
 }
 .bg-pk {
-  background-color: #9A4A4C;
+  background-color: #B59143;
 }
 .bg-br {
-  background-color: #772054;
+  background-color: #624505;
 }
 #logo>span {
     display: inline-block;
@@ -28,19 +28,26 @@ h2{
 #description .jandi-icon {
   margin-bottom: 8px;
 }
-.jandi-icon::after {
+.jandi-icon {
   z-index: -1;
   -webkit-animation: spin 5s infinite linear;
 }
 @-webkit-keyframes spin {
-  0%  {-webkit-transform: rotateY(0deg);}
-  100% {-webkit-transform: rotateY(360deg);}
+  0%  {
+    -webkit-transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
 }
 .nav-item {
   display: block;
   padding: 5px 10px;
 }
-
+nav {
+  z-index: 100;
+  background-color: rgba(5,47,16) !important;
+}
 #contents {
   margin-top: -20px;
 }
@@ -59,8 +66,8 @@ h2{
 @media (max-width: 767px) {
   #header,#speaker{
     background-attachment: initial;
-
-}
+    background-position: center;
+  }
 }
 
 #header h1 {
@@ -143,10 +150,13 @@ h2{
 
 #description {
   background-color: white;
+  background-image: url("images/deco-layer.png");
+  background-position: top left;
 }
 #description p {
   line-height: 170%;
   font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 #speakers {
   background-image: linear-gradient(rgba(0, 37, 0, 0.9),rgba(0, 37, 0, 0.7)), url('images/people.jpg');
@@ -213,26 +223,8 @@ h2{
   background-color: #90B24C;
 }
 #ticket-price {
-  background-color: #f8f8f8;
+  background: #f8f8f8 url("images/deco-layer.png");
 }
-#ticket-price::after {
-    background-image: url("https://www.radiustheme.com/demo/html/eventalk/img/figure/figure-icon3.png");
-
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: 100;
-}
-
 #ticket-price #price {
   font-weight: 800;
 }
