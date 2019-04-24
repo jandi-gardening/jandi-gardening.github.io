@@ -28,7 +28,7 @@ h2{
 #description .jandi-icon {
   margin-bottom: 8px;
 }
-.jandi-icon:after {
+.jandi-icon::after {
   z-index: -1;
   -webkit-animation: spin 5s infinite linear;
 }
