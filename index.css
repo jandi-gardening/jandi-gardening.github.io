@@ -28,15 +28,13 @@ h2{
 #description .jandi-icon {
   margin-bottom: 8px;
 }
-.jandi-icon {
+.jandi-icon:after {
+  z-index: -1;
   -webkit-animation: spin 5s infinite linear;
 }
 @-webkit-keyframes spin {
   0%  {-webkit-transform: rotateY(0deg);}
   100% {-webkit-transform: rotateY(360deg);}
-}
-nav {
-  z-index: 100;
 }
 .nav-item {
   display: block;
@@ -53,11 +51,16 @@ nav {
   color: white;
   margin: 0;
   padding: 50px 30px 50px 30px;
-
   background-image: linear-gradient(rgba(0, 37, 0, 0.9),rgba(0, 37, 0, 0.7)), url('images/cover.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+@media (max-width: 767px) {
+  #header,#speaker{
+    background-attachment: initial;
+
+}
 }
 
 #header h1 {
