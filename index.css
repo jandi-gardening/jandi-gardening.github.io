@@ -35,6 +35,9 @@ h2{
   0%  {-webkit-transform: rotateY(0deg);}
   100% {-webkit-transform: rotateY(360deg);}
 }
+nav {
+  z-index: 100;
+}
 .nav-item {
   display: block;
   padding: 5px 10px;
