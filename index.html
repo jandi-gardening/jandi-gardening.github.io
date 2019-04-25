@@ -100,40 +100,55 @@
         <h2 class="text-white m-30">Speakers</h2>
         <div class="row">
           <div class="speaker col-xs-6 col-md-6 col-lg-4">
-            <img class="speaker-profile img-responsive" src="images/speakers/aria.png" />
+            <div class="speaker-profile">
+              <img class="img-responsive" src="images/speakers/aria.png" />
+              <div class="speaker-desc">
+                <span>카카오모빌리티 서버 개발</span>
+              </div>
+            </div>
             <span class="speaker-name">Aria<br/>오아리</span>
-            <!-- <div class="speaker-desc">
-              카카오모빌리티 서버개발
-            </div> -->
           </div>
+
           <div class="speaker col-xs-6 col-md-6 col-lg-4">
-            <img class="speaker-profile img-responsive" src="images/speakers/latte.png" />
+            <div class="speaker-profile">
+              <img class="img-responsive" src="images/speakers/latte.png" />
+              <div class="speaker-desc">
+                <span>카카오 안드로이드 개발</span>
+              </div>
+            </div>
             <span class="speaker-name">Latte<br/>김상국</span>
           </div>
+
           <div class="speaker col-xs-6 col-md-6 col-lg-4">
-            <img class="speaker-profile img-responsive" src="images/speakers/kyle.png" />
+            <div class="speaker-profile">
+              <img class="img-responsive" src="images/speakers/kyle.png" />
+              <div class="speaker-desc">
+                <span>네이버</span>
+              </div>
+            </div>
             <span class="speaker-name">Kyle<br/>조용래</span>
           </div>
+
           <div class="speaker col-xs-6 col-md-6 col-lg-4">
-            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
-            <span class="speaker-name">Aria</span>
+            <div class="speaker-profile">
+              <img class="img-responsive" src="images/speakers/june.png" />
+              <div class="speaker-desc">
+                <span>카카오 서버 개발</span>
+              </div>
+            </div>
+            <span class="speaker-name">June<br/>김준호</span>
           </div>
+
           <div class="speaker col-xs-6 col-md-6 col-lg-4">
-            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
-            <span class="speaker-name">Aria</span>
+            <div class="speaker-profile">
+              <img class="img-responsive" src="images/speakers/miika.png" />
+              <div class="speaker-desc">
+                <span>카카오 데이터 분석</span>
+              </div>
+            </div>
+            <span class="speaker-name">Miika<br/>이민호</span>
           </div>
-          <div class="speaker col-xs-6 col-md-6 col-lg-4">
-            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
-            <span class="speaker-name">Aria</span>
-          </div>
-          <div class="speaker col-xs-6 col-md-6 col-lg-4">
-            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
-            <span class="speaker-name">Aria</span>
-          </div>
-          <div class="speaker col-xs-6 col-md-6 col-lg-4">
-            <img class="speaker-profile img-responsive" src="images/jandi_leaf.png" />
-            <span class="speaker-name">Aria</span>
-          </div>
+
         </div>
       </div>
 
@@ -149,7 +164,7 @@
           </colgroup>
             <tr>
               <th class="bg-pk">9:30 ~ 10:00</th>
-              <td colspan="2">등록</td>
+              <td colspan="2" class="text-center">등록</td>
             </tr>
             <tr>
               <th class="bg-dg">10:00 ~ 10:20</th>
@@ -168,22 +183,22 @@
             </tr>
             <tr>
               <th class="bg-pk">12:00 ~ 13:00</th>
-              <td colspan="2">Lunch</td>
+              <td colspan="2" class="text-center">점심</td>
             </tr>
             <tr>
               <th class="bg-dg">13:00 ~ 13:50</th>
               <td>Causal Inference</td>
-              <td class="speaker">Miika <!--<img class="speaker-sm img-responsive" src="images/speakers/miika.png" />--></td>
+              <td class="speaker">Miika <img class="speaker-sm img-responsive" src="images/speakers/miika.png" /></td>
             </tr>
             <tr>
               <th class="bg-pk">14:00 ~ 14:30</th>
-              <td>Real Estate</td>
+              <td>부동산 이야기</td>
               <td class="speaker">Lev <!--<img class="speaker-sm img-responsive" src="images/speakers/lev.png "/>--></td>
             </tr>
             <tr>
               <th class="bg-dg">14:40 ~ 15:20</th>
-              <td>canvas</td>
-              <td class="speaker">June <!--<img class="speaker-sm img-responsive" src="images/speakers/june.png" />--></td>
+              <td>Konva와 함께하는 canvas 2d 그래픽</td>
+              <td class="speaker">June <img class="speaker-sm img-responsive" src="images/speakers/june.png" /></td>
             </tr>
             <tr>
               <th class="bg-pk">15:30 ~ 17:00</th>
@@ -192,7 +207,7 @@
             </tr>
             <tr>
               <th class="bg-dg">17:00 ~</th>
-              <td colspan="2">마무리 및 행사 종료<br/><i style="font-weight:100">(네트워킹을 위한 뒷풀이도 진행됩니다!)</i></td>
+              <td colspan="2" class="text-center">마무리 및 행사 종료<br/><i style="font-weight:100">(네트워킹을 위한 뒷풀이도 진행됩니다!)</i></td>
             </tr>
           </table>
           <span>* <span class="badge badge-pill badge-success">실습</span> 뱃지가 붙어있는 세션은 노트북이 필요합니다.</span>
@@ -247,6 +262,15 @@
       window.open('https://forms.gle/GPmfFs8p49khu1D2A', '_blank');
     })
     $('body').scrollspy({ target: '#navbarCollapse' });
+
+    $(".speaker-profile").mouseover(function(e) {
+      var target = e.currentTarget;
+      target.querySelector(".speaker-desc").style.display = "block";
+    });
+    $(".speaker-profile").mouseout(function(e) {
+      var target = e.currentTarget;
+      target.querySelector(".speaker-desc").style.display = "none";
+    });
 
     /* timer */
     var countDownDate = new Date("2019-06-01T09:30:00").getTime();
