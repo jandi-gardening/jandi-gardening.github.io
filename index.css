@@ -7,20 +7,11 @@ h2{
   margin: 30px auto;
   text-align: center;
 }
-.bg-gr {
-  background-color: #348A43;
-}
 .bg-dg {
-  background-color: #5E6205;
-}
-.bg-lg {
-  background-color: #AFB443;
+  background-color: #DCE07B;
 }
 .bg-pk {
-  background-color: #B59143;
-}
-.bg-br {
-  background-color: #624505;
+  background-color: #E2C27C;
 }
 #logo>span {
     display: inline-block;
@@ -98,7 +89,7 @@ nav {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-image: url("https://www.radiustheme.com/demo/html/eventalk/img/figure/countdown1.jpg");
+  background-image: url("images/countdown.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -150,13 +141,13 @@ nav {
 
 #description {
   background-color: white;
-  background-image: url("images/deco-layer.png");
+  background-image: linear-gradient(rgba(248, 248, 248, 0.6),rgba(248, 248, 248, 0.6)), url("images/deco-layer.png");
   background-position: top left;
 }
 #description p {
   line-height: 170%;
   font-size: 1em;
-  background-color: rgba(255, 255, 255, 0.4);
+  /* background-color: rgba(255, 255, 255, 0.4); */
 }
 #speakers {
   background-image: linear-gradient(rgba(0, 37, 0, 0.9),rgba(0, 37, 0, 0.7)), url('images/people.jpg');
@@ -199,7 +190,8 @@ nav {
   max-width: 120px;
   width: 20%;
   text-align: center;
-  color: white;
+  font-weight: 300;
+  color: #393B00;
 }
 #schedule table th,td {
   vertical-align: middle !important;
@@ -223,7 +215,7 @@ nav {
   background-color: #90B24C;
 }
 #ticket-price {
-  background: #f8f8f8 url("images/deco-layer.png");
+  background: linear-gradient(rgba(248, 248, 248, 0.6),rgba(248, 248, 248, 0.6)), url("images/deco-layer.png");
 }
 #ticket-price #price {
   font-weight: 800;
