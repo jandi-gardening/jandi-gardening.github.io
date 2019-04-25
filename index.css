@@ -169,10 +169,19 @@ nav {
   max-width: 200px;
   height: auto;
 }
+#speakers .speaker-desc {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 2px;
+  margin: 10px auto;
+  border-radius: 50% !important;
+  max-width:200px;
+}
 @media (min-width: 300px) {
-  /* .speaker {
+  #speakers .speaker {
     width: 50%;
-  } */
+  }
 }
 
 .speaker .speaker-name {
