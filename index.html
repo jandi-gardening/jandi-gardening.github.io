@@ -263,7 +263,7 @@
     <div id="location">
       <h2>Location</h2>
       <p class="text-center"><b>구글캠퍼스</b><br/>서울 강남구 영동대로 417 오토웨이타워 지하 2층</p>
-      <div id="map" style="width:100%;height:500px;"></div>
+      <div id="map" style="width:100%;height:500px;max-width:2040px;"></div>
     </div>
     <footer>
       <div class="text-center text-white">
@@ -321,23 +321,6 @@
     var x = setInterval(timer, 1000);
 
     /* map */
-    // var container = document.getElementById('map');
-    // var options = {
-		// center: new daum.maps.LatLng(37.5074323,127.0638067),
-		// level: 4,
-	  //   marker: [{
-		//     position: new daum.maps.LatLng(37.506174, 127.063834),
-		//     text: "잔디콘 @구글캠퍼스"
-	  //   }]
-    // };
-    // var map = new daum.maps.StaticMap(container, options);
-    // container.style.width = "100%";
-    // container.style.height = "500px";
-    // map.relayout();
-  })
-
-  window.onload = function() {
-    console.log("on load");
     var container = document.getElementById('map');
     var options = {
 		center: new daum.maps.LatLng(37.5074323,127.0638067),
@@ -348,10 +331,7 @@
 	    }]
     };
     var map = new daum.maps.StaticMap(container, options);
-    container.style.width = "100%";
-    container.style.height = "500px";
-    map.relayout();
-  }
+  })
   </script>
 </body>
 </html>
