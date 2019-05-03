@@ -53,27 +53,27 @@
       <div id="time-nav" class="content">
         <div class="row justify-content-center">
           <div class="time-unit col-md-1">
-            <h1 id="left-day" class="time-label">30</h1>
+            <h1 id="left-day" class="time-label"></h1>
             <span>Days</span>
           </div>
 
           <span class="time-divider col-md-1">:</span>
 
           <div class="time-unit col-md-1">
-            <h1 id="left-hour" class="time-label">05</h1>
+            <h1 id="left-hour" class="time-label"></h1>
             <span>Hours</span>
           </div>
 
           <span class="time-divider col-md-1">:</span>
 
           <div class="time-unit col-md-1">
-            <h1 id="left-min" class="time-label">30</h1>
+            <h1 id="left-min" class="time-label"></h1>
             <span>Minutes</span>
           </div>
           <span class="time-divider col-md-1">:</span>
 
           <div class="time-unit col-md-1">
-            <h1 id="left-sec" class="time-label">30</h1>
+            <h1 id="left-sec" class="time-label"></h1>
             <span>Seconds</span>
           </div>
         </div>
@@ -294,7 +294,7 @@
 
     /* timer */
     var countDownDate = new Date("2019-06-01T09:30:00").getTime();
-    var x = setInterval(function() {
+    var timer = (function() {
       var now = new Date().getTime();
       var distance = countDownDate - now;
 
@@ -316,7 +316,9 @@
       document.getElementById("left-hour").innerHTML = addzero(hours);
       document.getElementById("left-min").innerHTML = addzero(minutes);
       document.getElementById("left-sec").innerHTML = addzero(seconds);
-    }, 1000);
+    });
+    timer();
+    var x = setInterval(timer, 1000);
 
     /* map */
     // var container = document.getElementById('map');
