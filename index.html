@@ -329,6 +329,9 @@
 	    }]
     };
     var map = new daum.maps.StaticMap(container, options);
+    container.style.width = "100%";
+    container.style.height = "500px";
+    map.relayout();
   })
   </script>
 </body>
